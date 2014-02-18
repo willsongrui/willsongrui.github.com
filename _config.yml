@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
+url: http://willsongrui.github.io
 title: My Octopress Blog
 subtitle: A blogging framework for hackers.
-author: Your Name
+author: willsongrui
 simple_search: http://google.com/search
 description:
 
@@ -68,9 +68,7 @@ github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
-# Twitter
-twitter_user:
-twitter_tweet_button: true
+
 
 # Google +1
 google_plus_one: false
