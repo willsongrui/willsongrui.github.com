@@ -1,25 +1,15 @@
-{% include header.html %}
+---
+layout: default
+single: true
+---
 
-	<body>
-		{% include logo.html %}
-		<div id="wrapper">
-			<div id="content">
-				<a target="_blank" style="float:right;margin-top:15px" href="http://twitter.com/share?url=http://blog.libingcun.com{{ page.url }}&via=libingcun&text={{ page.title }}"><span class="balloon">retweet</span></a>
-				<h2>{{ page.title }}</h2>
-				<div class="cnt">
-					{{ content }}
-					<br />
-					--EOF--
-					<p>若无特别说明，本站文章均为原创，转载请保留链接，谢谢</p>
-				</div>
-				<div id="disqus_thread"></div>
-				{% include disqus.html %}
-			</div>
-			
-			<div id="footer">
-				{% include footer.html %}
-			</div>
-		</div>
-	</body>
-</html>
-
+<article class="post">{% include article.html %}</article>
+{% unless page.sharing == false %}
+	{% include post/sharing.html %}
+{% endunless %}
+{% if site.disqus_short_name and page.comments == true %}
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+</section>
+{% endif %}
