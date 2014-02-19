@@ -10,6 +10,7 @@ categories: 算法 leetcode
 <h1>原题：Gas Station</h1>
 {% img /images/gas-station.png %}
 </section>
+<!-- more -->
 <section>
 <h1>解题方法</h1>
 <p>本题总共需要两步，首先需要判断汽车时候可以跑完全程，如果可以，则需要指出汽车开始的位置。</p>
@@ -51,10 +52,4 @@ class Solution:
 				result = total
 			i = (i+1)%length
 		return resultBeg
-
-
-gas = [1,2,3,3]
-cost = [2,1,5,1]
-sol = Solution()
-print sol.canCompleteCircuit(gas,cost)
 {% endcodeblock %}
