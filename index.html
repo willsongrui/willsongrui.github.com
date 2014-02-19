@@ -9,7 +9,7 @@
 
 <meta name="author" content="willsongrui"> 
 
-<meta name="description" content="原题：Gas Station 解题方法 本题总共需要两步，首先需要判断汽车时候可以跑完全程，如果可以，则需要指出汽车开始的位置。 对于汽车能否跑完全程，有一个结论：如果gas总和大于cost总和，则汽车一定能跑完。这个结论可以通过反证法证明。 对于找到汽车的出发点， &hellip;"> <meta name="keywords" content="">
+<meta name="description" content=" 一直在使用vim编辑，但是感觉玩的不溜，现记录一些常用的命令和Vim知识。 更多 &rarr; Feb 19th, 2014 linux, shell "> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -100,6 +100,50 @@ $(document).ready(
     <article class="post">
 	<h2 class="title">
 		
+		<a href="/blog/2014/02/19/jian-ming-vimshi-yong-ming-ling/">
+		
+			简明Vim使用命令</a>
+	</h2>
+	<div class="entry-content">
+		<p><article>
+一直在使用vim编辑，但是感觉玩的不溜，现记录一些常用的命令和Vim知识。</p>
+
+
+		
+		<a href="/blog/2014/02/19/jian-ming-vimshi-yong-ming-ling/" class="more-link">更多 &rarr;</a>
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-19T14:16:18+08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2014</time></div>
+	
+
+<div class="tags">
+
+	<a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/shell/'>shell</a>
+
+</div>
+
+
+	
+</div></article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
 		<a href="/blog/2014/02/19/zui-da-lian-xu-zi-xu-lie-he/">
 		
 			最大连续子序列和</a>
@@ -112,111 +156,11 @@ $(document).ready(
 
 
 <p><img src="/images/gas-station.png">
-</section>
-<section></p>
-
-<h1>解题方法</h1>
-
-
-<p>本题总共需要两步，首先需要判断汽车时候可以跑完全程，如果可以，则需要指出汽车开始的位置。</p>
-
-
-<p>对于汽车能否跑完全程，有一个结论：如果gas总和大于cost总和，则汽车一定能跑完。这个结论可以通过反证法证明。</p>
-
-
-<p>对于找到汽车的出发点，问题可以转变成求循环数组的最大连续子序列和，这也是本文的重点。</p>
-
-
-<p>求法有两种，第一种是直接遍历每一个起点和每一个终点，时间复杂度是(n**2)。在这道题时超时了。</p>
-
-
-<h2>正确解法</h2>
-
-
-<p>变量sum[i]表示以i结尾的路程的最大子序列和，则</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">if</span> <span class="nb">sum</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
-</span><span class='line'>  <span class="nb">sum</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">gas</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">cost</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</span><span class='line'><span class="k">else</span><span class="p">:</span>
-</span><span class='line'>  <span class="nb">sum</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>这样遍历一次就可以得到最大的子序列和以及起始和终止坐标。具体代码如下：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">canCompleteCircuit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gas</span><span class="p">,</span> <span class="n">cost</span><span class="p">):</span>
-</span><span class='line'>      <span class="k">if</span> <span class="nb">sum</span><span class="p">(</span><span class="n">gas</span><span class="p">)</span><span class="o">&lt;</span><span class="nb">sum</span><span class="p">(</span><span class="n">cost</span><span class="p">):</span>
-</span><span class='line'>          <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
-</span><span class='line'>      <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">gas</span><span class="p">)</span>
-</span><span class='line'>      <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">gas</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">cost</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span><span class="p">)]</span>
-</span><span class='line'>      <span class="n">beg</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-</span><span class='line'>      <span class="n">end</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-</span><span class='line'>      <span class="n">total</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-</span><span class='line'>      <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class='line'>      <span class="n">resultBeg</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class='line'>      <span class="n">result</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-</span><span class='line'>      <span class="k">while</span> <span class="n">beg</span><span class="o">&lt;</span><span class="n">gas</span><span class="p">:</span>
-</span><span class='line'>          <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="n">beg</span><span class="p">:</span>
-</span><span class='line'>              <span class="k">break</span>
-</span><span class='line'>          <span class="k">if</span> <span class="n">total</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
-</span><span class='line'>              <span class="n">total</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</span><span class='line'>              <span class="n">beg</span> <span class="o">=</span> <span class="n">i</span>
-</span><span class='line'>          <span class="k">else</span><span class="p">:</span>
-</span><span class='line'>              <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</span><span class='line'>          <span class="k">if</span> <span class="n">total</span> <span class="o">&gt;</span> <span class="n">result</span><span class="p">:</span>
-</span><span class='line'>              <span class="n">resultBeg</span> <span class="o">=</span> <span class="n">beg</span>
-</span><span class='line'>              <span class="n">result</span> <span class="o">=</span> <span class="n">total</span>
-</span><span class='line'>          <span class="n">i</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="n">length</span>
-</span><span class='line'>      <span class="k">return</span> <span class="n">resultBeg</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="n">gas</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-</span><span class='line'><span class="n">cost</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
-</span><span class='line'><span class="n">sol</span> <span class="o">=</span> <span class="n">Solution</span><span class="p">()</span>
-</span><span class='line'><span class="k">print</span> <span class="n">sol</span><span class="o">.</span><span class="n">canCompleteCircuit</span><span class="p">(</span><span class="n">gas</span><span class="p">,</span><span class="n">cost</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
+</section></p>
 
 
 		
-		
+		<a href="/blog/2014/02/19/zui-da-lian-xu-zi-xu-lie-he/" class="more-link">更多 &rarr;</a>
 	</div>
 
 

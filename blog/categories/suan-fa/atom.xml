@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 算法 | 生活|Coding]]></title>
   <link href="http://willsongrui.github.io/blog/categories/suan-fa/atom.xml" rel="self"/>
   <link href="http://willsongrui.github.io/"/>
-  <updated>2014-02-19T14:04:09+08:00</updated>
+  <updated>2014-02-19T14:47:57+08:00</updated>
   <id>http://willsongrui.github.io/</id>
   <author>
     <name><![CDATA[willsongrui]]></name>
@@ -25,8 +25,12 @@
 
 
 <p><img src="/images/gas-station.png">
-</section>
-<section></p>
+</section></p>
+
+<!-- more -->
+
+
+<p><section></p>
 
 <h1>解题方法</h1>
 
@@ -100,9 +104,6 @@
 <span class='line-number'>27</span>
 <span class='line-number'>28</span>
 <span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
 </pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">def</span> <span class="nf">canCompleteCircuit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gas</span><span class="p">,</span> <span class="n">cost</span><span class="p">):</span>
@@ -131,10 +132,7 @@
 </span><span class='line'>    <span class="k">return</span> <span class="n">resultBeg</span>
 </span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">gas</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-</span><span class='line'><span class="n">cost</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
-</span><span class='line'><span class="n">sol</span> <span class="o">=</span> <span class="n">Solution</span><span class="p">()</span>
-</span><span class='line'><span class="k">print</span> <span class="n">sol</span><span class="o">.</span><span class="n">canCompleteCircuit</span><span class="p">(</span><span class="n">gas</span><span class="p">,</span><span class="n">cost</span><span class="p">)</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>

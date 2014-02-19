@@ -5,11 +5,14 @@
 	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
 	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<meta charset="utf-8">
-	<title>  | 生活|Coding</title>
+	<title>简明Vim使用命令  | 生活|Coding</title>
 
 <meta name="author" content="willsongrui"> 
 
-<meta name="description" content=" 一直在使用vim编辑，但是感觉玩的不溜，现记录一些常用的命令和Vim知识。 更多 &rarr; Feb 19th, 2014 linux, shell "> <meta name="keywords" content="">
+<meta name="description" content="一直在使用vim编辑，但是感觉玩的不溜，现记录一些常用的命令和Vim知识。 各种插入命令 i &mdash;> 进入插入模式
+o &mdash;> 在当前光标的下一行插入
+O &mdash;> 在当前光标的上一行插入
+cw &mdash;> 替换从当前光标开始到单词结尾 移动光标命令 0 & &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -94,24 +97,47 @@ $(document).ready(
 
 </header>
 
-	<div id="content" class="inner">
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2014/02/19/jian-ming-vimshi-yong-ming-ling/">
-		
-			简明Vim使用命令</a>
-	</h2>
-	<div class="entry-content">
-		<p><article>
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">简明Vim使用命令</h2>
+	<div class="entry-content"><p><article>
 一直在使用vim编辑，但是感觉玩的不溜，现记录一些常用的命令和Vim知识。</p>
 
+<!-- more -->
 
-		
-		<a href="/blog/2014/02/19/jian-ming-vimshi-yong-ming-ling/" class="more-link">更多 &rarr;</a>
-	</div>
+
+<h2>各种插入命令</h2>
+
+
+<p>i &mdash;> 进入插入模式<br>
+o &mdash;> 在当前光标的下一行插入<br>
+O &mdash;> 在当前光标的上一行插入<br>
+cw &mdash;> 替换从当前光标开始到单词结尾</p>
+
+<h2>移动光标命令</h2>
+
+
+<p>0 &mdash;> 到行头<br>
+$ &mdash;> 到行尾<br>
+gg &mdash;> 到文档头<br>
+G &mdash;> 到文档尾 <br>
+Ng &mdash;>到文档第N行<br></p>
+
+<h2>其他命令</h2>
+
+
+<p>&lt;ctrl+r> &mdash;> redo <br>
+u &mdash;> undo<br>
+N<command> &mdash;> 重复N次命令<br>
+. &mdash;> 重复上次命令<br></p>
+
+<h2>visual模式</h2>
+
+
+<p>v &mdash;> 单字符选取<br>
+V &mdash;> 每次选取一行<br>
+&lt;ctrl+v> &mdash;> 矩形块方式选取<br>
+</article></p>
+</div>
 
 
 <div class="meta">
@@ -140,61 +166,24 @@ $(document).ready(
 	
 </div></article>
 
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2014/02/19/zui-da-lian-xu-zi-xu-lie-he/">
-		
-			最大连续子序列和</a>
-	</h2>
-	<div class="entry-content">
-		<p><article>
-<section></p>
-
-<h1>原题：Gas Station</h1>
-
-
-<p><img src="/images/gas-station.png">
-</section></p>
-
-
-		
-		<a href="/blog/2014/02/19/zui-da-lian-xu-zi-xu-lie-he/" class="more-link">更多 &rarr;</a>
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-19T13:23:39+08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2014</time></div>
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
 	
-
-<div class="tags">
-
-	<a class='category' href='/blog/categories/leetcode/'>leetcode</a>, <a class='category' href='/blog/categories/suan-fa/'>算法</a>
-
+	
+	
+<!---	<a class="addthis_counter addthis_pill_style"></a> --->
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
 </div>
 
 
-	
-</div></article>
 
-<nav id="pagenavi">
-    
-    
-    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
-</nav></div>
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
 	<footer id="footer" class="inner">Copyright &copy; 2014
 
     willsongrui
@@ -215,7 +204,10 @@ $(document).ready(
       var disqus_shortname = 'willsongrui';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://willsongrui.github.io/blog/2014/02/19/jian-ming-vimshi-yong-ming-ling/';
+        var disqus_url = 'http://willsongrui.github.io/blog/2014/02/19/jian-ming-vimshi-yong-ming-ling/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

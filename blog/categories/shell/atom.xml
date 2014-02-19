@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: shell | 生活|Coding]]></title>
+  <link href="http://willsongrui.github.io/blog/categories/shell/atom.xml" rel="self"/>
+  <link href="http://willsongrui.github.io/"/>
+  <updated>2014-02-19T14:47:57+08:00</updated>
+  <id>http://willsongrui.github.io/</id>
+  <author>
+    <name><![CDATA[willsongrui]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[简明Vim使用命令]]></title>
+    <link href="http://willsongrui.github.io/blog/2014/02/19/jian-ming-vimshi-yong-ming-ling/"/>
+    <updated>2014-02-19T14:16:18+08:00</updated>
+    <id>http://willsongrui.github.io/blog/2014/02/19/jian-ming-vimshi-yong-ming-ling</id>
+    <content type="html"><![CDATA[<p><article>
+一直在使用vim编辑，但是感觉玩的不溜，现记录一些常用的命令和Vim知识。</p>
+
+<!-- more -->
+
+
+<h2>各种插入命令</h2>
+
+
+<p>i &mdash;> 进入插入模式<br>
+o &mdash;> 在当前光标的下一行插入<br>
+O &mdash;> 在当前光标的上一行插入<br>
+cw &mdash;> 替换从当前光标开始到单词结尾</p>
+
+<h2>移动光标命令</h2>
+
+
+<p>0 &mdash;> 到行头<br>
+$ &mdash;> 到行尾<br>
+gg &mdash;> 到文档头<br>
+G &mdash;> 到文档尾 <br>
+Ng &mdash;>到文档第N行<br></p>
+
+<h2>其他命令</h2>
+
+
+<p>&lt;ctrl+r> &mdash;> redo <br>
+u &mdash;> undo<br>
+N<command> &mdash;> 重复N次命令<br>
+. &mdash;> 重复上次命令<br></p>
+
+<h2>visual模式</h2>
+
+
+<p>v &mdash;> 单字符选取<br>
+V &mdash;> 每次选取一行<br>
+&lt;ctrl+v> &mdash;> 矩形块方式选取<br>
+</article></p>
+]]></content>
+  </entry>
+  
+</feed>
