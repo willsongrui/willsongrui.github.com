@@ -1,16 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://willsongrui.github.io/blog/2014/02/19/zui-da-lian-xu-zi-xu-lie-he/</loc>
+        <lastmod>2014-02-19T14:03:59+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://willsongrui.github.io/super/</loc>
         <lastmod>2014-02-18T15:39:17+08:00</lastmod>
     </url>
     <url>
         <loc>http://willsongrui.github.io/</loc>
-        <lastmod>2014-02-18T14:30:18+08:00</lastmod>
+        <lastmod>2014-02-19T14:03:59+08:00</lastmod>
     </url>
     <url>
         <loc>http://willsongrui.github.io/archives/</loc>
-        <lastmod>2014-02-18T14:30:18+08:00</lastmod>
+        <lastmod>2014-02-19T14:03:59+08:00</lastmod>
     </url>
     <url>
         <loc>http://willsongrui.github.io/robots.txt</loc>
@@ -18,11 +22,11 @@
     </url>
     <url>
         <loc>http://willsongrui.github.io/blog/</loc>
-        <lastmod>2014-02-18T14:30:18+08:00</lastmod>
+        <lastmod>2014-02-19T14:03:59+08:00</lastmod>
     </url>
     <url>
         <loc>http://willsongrui.github.io/blog/archives/</loc>
-        <lastmod>2014-02-18T14:30:18+08:00</lastmod>
+        <lastmod>2014-02-19T14:03:59+08:00</lastmod>
     </url>
     <url>
         <loc>http://willsongrui.github.io/links.html</loc>
@@ -30,6 +34,6 @@
     </url>
     <url>
         <loc>http://willsongrui.github.io/about/</loc>
-        <lastmod>2014-02-18T16:26:59+08:00</lastmod>
+        <lastmod>2014-02-19T11:45:07+08:00</lastmod>
     </url>
 </urlset>
