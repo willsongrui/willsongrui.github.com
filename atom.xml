@@ -4,7 +4,7 @@
   <title><![CDATA[码农@bupt]]></title>
   <link href="http://willsongrui.github.io/atom.xml" rel="self"/>
   <link href="http://willsongrui.github.io/"/>
-  <updated>2014-02-18T15:33:05+08:00</updated>
+  <updated>2014-02-18T16:43:10+08:00</updated>
   <id>http://willsongrui.github.io/</id>
   <author>
     <name><![CDATA[willsongrui]]></name>
@@ -18,7 +18,13 @@
     <link href="http://willsongrui.github.io/blog/2014/02/18/title/"/>
     <updated>2014-02-18T11:14:49+08:00</updated>
     <id>http://willsongrui.github.io/blog/2014/02/18/title</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>this is a test for comments!</p>
+
+<!-- more -->
+
+
+<p>this is a test for comments!
+this is a test for comments!</p>
 ]]></content>
   </entry>
   
