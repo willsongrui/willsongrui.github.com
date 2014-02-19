@@ -6,17 +6,10 @@ comments: true
 sharing: true
 footer: true
 ---
+{% img /images/haizewang.jpg %}
 <section>
   <h1>About Me</h1>
-  <p>A little something about me.</p>
+  <p>专业码农，宅在校中，爱好不多，精通很少，理想丰满，道路还长</p>
+  <p>闲来无事，弄个博客，记记见闻，贴贴代码，水平很低，请勿见笑</p>
 </section>
-``` python title url 
-class Fixnum
-	def prime?
-	end
-```
-{% img image/cat.jpg #1 %}
-<img src="image/cat.jpg" alt="郁金香" height="200" width="200" />
-
-
 
